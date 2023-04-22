@@ -59,7 +59,7 @@ const WalletCard = () => {
           </li>
 
           <li>
-            <div className="portfolio-inner">
+            <div className="portfolio-inner-disabled grayscale">
               <img src="images/wallet-connect-logo.svg" alt="Metamask Logo" className="logo-smaller"></img>
               <p style={{color: "white"}}>WalletConnect</p>
               <br/>

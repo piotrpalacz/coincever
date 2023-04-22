@@ -7,6 +7,7 @@ function Navbar() {
         <div className="navbar">
           <div className="logo">
             <Link to="/">
+              <img src="images/bull-logo.png" alt="bull logo" style={{width: "70px", height: "40px"}}/>
               <p>coincever</p>
             </Link>
           </div>
