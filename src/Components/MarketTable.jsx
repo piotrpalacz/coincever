@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
-function MarketTable() {
+export default function MarketTable() {
   
   let perPage = null;
   const [data, setData] = useState([]);
@@ -120,12 +120,18 @@ function MarketTable() {
 
                         <td style={{borderBottom: "none"}}>{item.market_cap_rank}</td>
                         <td className="text-align-start">
+                        <Link
+                        to={`/coin/${item.id}`}
+                        className="coin-row"
+                        key={item.id}
+                      >
                           <div style={{display: "flex", alignItems: "center"}}>
                             <img src={item.image} alt={item.id} height={"30px"} width={"30px"}></img>
                             <p style={{marginInlineStart: "10px"}}>
                               {item.name} - <span style={{fontVariant: "historical-forms"}}>{(item.symbol).toUpperCase()}</span>
                             </p>
                           </div>
+                        </Link>
                         </td>
 
                         <td className="text-align-end">
@@ -169,5 +175,3 @@ function MarketTable() {
     </>
   )
 }
-
-export default MarketTable;

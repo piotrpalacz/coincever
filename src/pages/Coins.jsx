@@ -1,6 +1,6 @@
 import MarketTable from "../Components/MarketTable";
 
-function Coins() {
+export default function Coins() {
 
 return (
     <>
@@ -21,5 +21,3 @@ return (
     </>
   )
 };
-
-export default Coins;

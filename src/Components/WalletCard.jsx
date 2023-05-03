@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ethers } from 'ethers';
 
-const WalletCard = () => {
+export default function WalletCard() {
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [metamaskAccount, setMetamaskAccount] = useState(null);
@@ -71,6 +71,7 @@ const WalletCard = () => {
         
       </div>
       <div className='walletCard'>
+        <p style={{textTransform: "uppercase", padding: "10px", border: "1px solid grey", borderRadius: "5px"}}>Connect the MetaMask Wallet to see your address and your account balance</p>
           <div className='accountDisplay'>
             <h3>Address: {metamaskAccount}</h3>
           </div>
@@ -84,6 +85,4 @@ const WalletCard = () => {
       </div>
     </>
   )
-}
-
-export default WalletCard;
+};

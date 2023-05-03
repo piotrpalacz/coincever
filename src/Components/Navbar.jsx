@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+export default function Navbar() {
   return (
     <>
       <nav className="navbar-sticky">
         <div className="navbar">
           <div className="logo">
             <Link to="/">
-              <img src="images/bull-logo.png" alt="bull logo" style={{width: "70px", height: "40px"}}/>
+              <img src="/images/bull-logo.png" alt="bull logo" style={{width: "70px", height: "40px"}}/>
               <p>coincever</p>
             </Link>
           </div>
@@ -37,6 +37,4 @@ function Navbar() {
 
     </>
   )
-}
-
-export default Navbar;
+};

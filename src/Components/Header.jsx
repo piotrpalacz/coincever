@@ -1,7 +1,7 @@
 import WalletCard from "./WalletCard";
 
 
-function Header() {
+export default function Header() {
   return (
     <>
       <section id="header" className="header-section">
@@ -22,6 +22,4 @@ function Header() {
       </section>
     </>
   )
-}
-
-export default Header;
+};
