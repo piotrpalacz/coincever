@@ -2,6 +2,13 @@
   --table-divider-color: #ffffff;
   --table-row-hover-background-color: green;
   --border-bottom-grey-dim: 1px solid rgb(94, 94, 94, 0.5);
+  --table-background: linear-gradient(
+    90deg,
+    rgba(220, 143, 61),
+    rgb(200, 47, 47)
+  );
+  --table-border: 1px solid rgba(255, 255, 255, 0.5);
+  --table-box-shadow: 0px 0px 8px rgba(255, 255, 255);
 }
 
 * {
@@ -335,16 +342,18 @@ a:focus {
 }
 
 .table-market-main table thead {
-  background: linear-gradient(
-    180deg,
-    rgba(234, 151, 50, 0.7),
-    rgb(6, 2, 15, 0.3)
-  );
+  background: var(--table-background);
+  border: var(--table-border);
+  box-shadow: var(--table-box-shadow);
 }
 
 .table-market-main table thead th {
   padding: 10px;
   font-size: 14px;
+}
+
+.thead-style {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0);
 }
 
 .table-market-main table td {
@@ -380,19 +389,20 @@ a:focus {
 .table-market-coins table {
   white-space: nowrap;
   border-collapse: collapse;
+  
 }
 
 .table-market-coins table thead {
-  background: linear-gradient(
-    180deg,
-    rgba(234, 151, 50, 0.7),
-    rgb(6, 2, 15, 0.3)
-  );
+  background: var(--table-background);
+  border: var(--table-border);
+  box-shadow: var(--table-box-shadow);
+  
 }
 
 .table-market-coins table thead th {
   padding: 10px;
   font-size: 14px;
+  
 }
 
 .table-market-coins table td {
@@ -403,8 +413,17 @@ a:focus {
   border-bottom: 1px solid #4e4e4e;
 }
 
+.table-market-coins table td a {
+  text-decoration: none;
+  color: white;
+}
+
 .table-market-coins table tbody tr:hover {
-  background-color: rgb(46, 51, 62);
+  background: linear-gradient(
+    90deg,
+    rgb(229, 229, 229, 0.2),
+    rgb(6, 2, 15, 0.3)
+  );
 }
 /* ---------------------------------------- */
 

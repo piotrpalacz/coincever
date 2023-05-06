@@ -75,41 +75,43 @@ export default function MarketTable() {
                     <caption hidden>Cryptocurrency table with actual prices</caption>
                     
                     <thead>
+                      
                       <tr>
-                        
-                        <th>#</th>
+                     
+                        <th className="thead-style">#</th>
 
-                        <th id="coin-name">
-                          <div className=" ">
+                        <th id="coin-name" className="thead-style">
+                          
                             <p className="text-align-start">Coin</p>
-                          </div>
+                          
                         </th>
 
-                        <th id="price">
+                        <th id="price" className="thead-style">
                           <div>
                             <p className="text-align-end">Price</p>
                           </div>
                         </th>
 
-                        <th id="change24h">
+                        <th id="change24h" className="thead-style">
                           <div className=" ">
                             <p className="text-align-end">24h %</p>
                           </div>
                         </th>
 
-                        <th id="volume24">
+                        <th id="volume24" className="thead-style">
                           <div className=" ">
                             <p className="text-align-end">24h Volume</p>
                           </div>
                         </th>
 
-                        <th id="market-cap">
+                        <th id="market-cap" className="thead-style">
                           <div className=" ">
                             <p className="text-align-end">Market Cap</p>
                           </div>
                         </th>
-
+                        
                       </tr>
+                      
                     </thead>
                     
 

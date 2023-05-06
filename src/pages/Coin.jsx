@@ -29,10 +29,6 @@ export default function Coin() {
     fetchData();
   }, [coinUrl]);
 
-  // console.log(coin.market_data.current_price.usd);
-
-  // let coinUpper = coin.symbol.toUpperCase();
-
   return (
     <>
       <section id='coin-section' className='coin-section padding-left'>
@@ -74,11 +70,14 @@ export default function Coin() {
               </div>
 
               <div className='coin__progress-bar'>
-                <progress value={coin.market_data?.current_price?.usd/48.5} min="0" max={coin.market_data?.high_24h?.usd/30.77}></progress>
+                <progress 
+                value={parseFloat(coin.market_data?.current_price?.usd - coin.market_data?.low_24h?.usd)} 
+                min="0" 
+                max={parseFloat(coin.market_data?.high_24h?.usd - coin.market_data?.low_24h?.usd)}></progress>
                 <div className='coin__progress-bar__prices'>
-                  <span>${coin.market_data?.low_24h?.usd}</span>
+                  <span>${parseFloat(coin.market_data?.low_24h?.usd)}</span>
                   <span>24h range</span>
-                  <span>${coin.market_data?.high_24h?.usd}</span>
+                  <span>${parseFloat(coin.market_data?.high_24h?.usd)}</span>
                 </div>
               </div>
 
@@ -135,7 +134,7 @@ export default function Coin() {
                 <div className='coin__content-right__box-row'>
                   <span>Website</span>
                   <div className='coin__content-right__box-row__flex'>
-                    <button>{(coin.links?.homepage[0])?.toString().split("http://www.")}</button>
+                    <button>{(coin.links?.homepage[0])}</button>
                     {/* <button>Whitepaper</button> */}
                   </div>
                 </div>

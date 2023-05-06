@@ -59,7 +59,7 @@ export default function WalletCard() {
           </li>
 
           <li>
-            <div className="portfolio-inner-disabled grayscale">
+            <div className="portfolio-inner-disabled grayscale" title="SOON!">
               <img src="images/wallet-connect-logo.svg" alt="Metamask Logo" className="logo-smaller"></img>
               <p style={{color: "white"}}>WalletConnect</p>
               <br/>
