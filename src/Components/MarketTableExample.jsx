@@ -21,7 +21,7 @@ function MarketTableExample() {
 
   const rows = [];
 
-  for(let i = 0; i < 20; i++) {
+  for(let i = 0; i < 5; i++) {
     rows.push(
       <tr key="id">
         <td style={{borderBottom: "none"}}>{i + 1}</td>

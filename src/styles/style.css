@@ -378,7 +378,11 @@ a:focus {
 }
 
 .table-market-main table tbody tr:hover {
-  background-color: rgb(46, 51, 62);
+  background: linear-gradient(
+    90deg,
+    rgb(229, 229, 229, 0.2),
+    rgb(6, 2, 15, 0.3)
+  );
   cursor: pointer;
 }
 /* ---------------------------------------- */
@@ -418,12 +422,26 @@ a:focus {
   color: white;
 }
 
+.table-market-coins table td a:visited {
+  color: white;
+}
+
+.table-market-coins table td a:hover {
+  text-decoration: underline;
+}
+
+.table-market-coins table td a {
+  text-decoration: none;
+  color: white;
+}
+
 .table-market-coins table tbody tr:hover {
   background: linear-gradient(
     90deg,
     rgb(229, 229, 229, 0.2),
     rgb(6, 2, 15, 0.3)
   );
+  cursor: pointer;
 }
 /* ---------------------------------------- */
 
@@ -730,10 +748,6 @@ progress[value] {
   border: none;
 }
 
-.trading-view__wrapper {
-  
-}
-
 #trading-view-chart {
   width: 800px;
   
@@ -741,4 +755,49 @@ progress[value] {
 
 #tradingview_9da52 {
   height: 600px;
+}
+
+/* -------------------- */
+/* SECTION PLATFORM INFO */
+
+.platform-info-section {
+  background: black;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+
+.heading-wrapper {
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 0 auto;
+  max-width: 90%;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.platform-info-header-inner {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.platform-info-header-inner h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  max-width: 700px;
+  text-align: center;
+}
+
+.platform-info-header-inner p {
+  padding: 1rem 0;
+  max-width: 500px;
+  text-align: center;
+  font-size: 0.9rem;
+  color:rgb(158, 158, 158);
+  font-weight: 500;
+  line-height: 20px;
 }
