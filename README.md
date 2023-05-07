@@ -16,7 +16,7 @@ Coinceve is a website where you can track your cryptocurrencies like a portfolio
 ### Installation
 To run the project locally, first, clone the repository using the following command:
 
-`git clone` https://github.com/piotrpalacz/coinceve.git
+`git clone` https://github.com/piotrpalacz/coincever.git
 
 Next, navigate to the project directory and install the dependencies using the following command:
 `npm install`
