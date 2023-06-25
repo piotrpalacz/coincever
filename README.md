@@ -4,7 +4,7 @@
 </div>
 
 ### Project description
-Coinceve is a website where you can track your cryptocurrencies like a portfolio tracker. The website allows you to keep track of your cryptocurrency investments and monitor their performance over time. The project is built using React and utilizes the Coingecko API for market and cryptocurrency details.
+Coincever is a website where you can track your cryptocurrencies like a portfolio tracker. The website allows you to keep track of your cryptocurrency investments and monitor their performance over time. The project is built using React and utilizes the Coingecko API for market and cryptocurrency details.
 
 ### Build with:
 * React JS
